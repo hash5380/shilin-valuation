@@ -1,0 +1,4 @@
+﻿模型,mape_pct,medape_pct,r2,within_10_pct,mae_10k_ping
+Hedonic OLS,14.452,11.05,0.608,45.83,9.887
+Random Forest,12.929,9.834,0.6716,50.69,8.868
+Gradient Boosting,13.05,10.22,0.6736,48.95,8.94

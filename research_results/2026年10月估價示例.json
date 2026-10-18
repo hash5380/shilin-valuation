@@ -1,0 +1,66 @@
+{
+  "input": {
+    "address": "臺北市士林區中山北路六段",
+    "district": "士林區",
+    "building_type": "華廈",
+    "area_ping": 32,
+    "age_years": 25,
+    "floor": 5,
+    "total_floors": 7,
+    "rooms": 3,
+    "managed": true,
+    "elevator": true,
+    "has_parking": false,
+    "extra_construction": false,
+    "price_month": "2026-10"
+  },
+  "results": {
+    "road": "中山北路六段",
+    "zone": "天母/芝山",
+    "road_sample_count": 68,
+    "basis_month": "2026-10",
+    "area_ping": 32.0,
+    "is_extrapolated": true,
+    "months_extrapolated": 2,
+    "trend_adjustment_pct": 0.081,
+    "estimates": {
+      "Hedonic OLS": {
+        "unit_10k_ping": 74.53,
+        "house_total_10k": 2384.82,
+        "parking_total_10k": 0,
+        "total_10k": 2384.82,
+        "illustrative_low_10k_ping": 63.76,
+        "illustrative_high_10k_ping": 85.3,
+        "cv_mape_pct": 14.452
+      },
+      "Random Forest": {
+        "unit_10k_ping": 80.34,
+        "house_total_10k": 2570.88,
+        "parking_total_10k": 0,
+        "total_10k": 2570.88,
+        "illustrative_low_10k_ping": 69.95,
+        "illustrative_high_10k_ping": 90.73,
+        "cv_mape_pct": 12.929
+      },
+      "Gradient Boosting": {
+        "unit_10k_ping": 90.55,
+        "house_total_10k": 2897.72,
+        "parking_total_10k": 0,
+        "total_10k": 2897.72,
+        "illustrative_low_10k_ping": 78.74,
+        "illustrative_high_10k_ping": 102.37,
+        "cv_mape_pct": 13.05
+      }
+    },
+    "best_model": "Random Forest",
+    "parking_source": "none",
+    "warnings": [
+      "此為截至 2026-08 最近成交月份估價，再將 Hedonic OLS 估計月趨勢（每月 +0.04% 的對數變化）外推 2 個月至 2026-10；不是當月真實成交資料或已驗證的精準預測。",
+      "三個模型的單價估計相差超過 15%，顯示模型不確定性較高；請搭配最新的相近成交案例審慎判斷。",
+      "原始登錄有電梯欄位，但在本樣本中電梯與建物型態完全重合；三模型無法估算獨立電梯溢價，切換電梯不會直接調整價格。",
+      "模型依實際成交資料訓練；2026 年較新月份的資料筆數可能很少，請特別留意樣本代表性。",
+      "估價基準 2026-10；截至 2026-08 的已揭露住宅成交資料，非即時行情或正式鑑價。"
+    ],
+    "range_note": "上下幅度僅以各模型整體 CV MAPE 作 ±% 敏感度示例，不是統計預測區間。"
+  }
+}

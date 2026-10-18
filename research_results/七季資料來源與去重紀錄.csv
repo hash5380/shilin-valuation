@@ -1,0 +1,9 @@
+﻿file,quarter,status,rows,shilin_rows,step,before,after,removed
+2025Q1_2026Q1_combined.zip/DATA/download (1).zip,114S2,included CSV,5743.0,482.0,,,,
+2025Q1_2026Q1_combined.zip/DATA/download (2).zip,114S3,included CSV,5442.0,474.0,,,,
+2025Q1_2026Q1_combined.zip/DATA/download (3).zip,114S4,included CSV,5819.0,414.0,,,,
+2025Q1_2026Q1_combined.zip/DATA/download (4).zip,115S1,included CSV,5366.0,406.0,,,,
+2025Q1_2026Q1_combined.zip/DATA/download.zip,114S1,included CSV,5344.0,533.0,,,,
+2026Q2.zip,115S2,included CSV,5607.0,440.0,,,,
+2026Q3.zip,115S3,included CSV,5716.0,545.0,,,,
+,,,,,dedup_on_編號,39037.0,39037.0,0.0

@@ -1,0 +1,11 @@
+士林區 AI 房價估價網站｜2026 第 3 季資料更新版
+
+1. 下載本 ZIP 後「解壓縮」，上傳解壓縮後的 app.py、study_core.py、training.py、requirements.txt、render.yaml、model 資料夾、static 資料夾等到 GitHub Repository 的最外層。
+2. 確認 GitHub 看到 model/metadata.json 和 model/random_forest.joblib 等檔案（模型檔不可遺漏）。
+3. 原本已連結 Render → 只要 Commit 上傳後等待部署；還沒部署 → Render 的 New → Blueprint → 選 Repository → Deploy。
+4. Render 顯示 Live 後，開啟 Render 給你的網址。應顯示：1,091 筆、最新實際交易月份 2026-08、現在估價預設 2026-10。
+5. 此網站不能直接雙擊 HTML 就執行，因為需要雲端讀取訓練好的模型。使用者不必下載 Python。
+
+重要：雖然最新下載檔名是 2026 Q3，但有效住宅實際成交只到 2026-08-14，10 月房價估計是外推（不是 10 月真實成交）。原始資料有電梯欄位，但其與建物型態完全重合，無法估計獨立溢價。
+
+詳細資料來源、評估方法及限制請見 README.md 與 research_results/。
